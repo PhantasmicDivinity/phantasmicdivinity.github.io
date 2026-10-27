@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know more about Phantasm</title>
     <link rel="icon" type="image/jpg" href="Terror-of-doom.jpg">
+    <script src="script.js" defer></script>
     <style>
         :root {
             --bg-color: #0d1117;
@@ -79,7 +80,7 @@
 
         .card {
             text-decoration: none;
-            transition: all 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out, visibility 0s ease-in-out;
         }
 
         .card:hover {
@@ -93,6 +94,12 @@
             flex-direction: column;
             gap: 4px;
             padding: 14px;
+        }
+
+        .info-card:hover {
+            cursor: pointer;
+            background-color: var(--hover-bg);
+            border-color: var(--accent-color);
         }
 
         .card-title {
